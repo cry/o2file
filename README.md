@@ -15,5 +15,9 @@ Useful for log objects where you need to automatically persist changes you make 
 
     o2file.init("myfile", opts).then((obj) => {
         // use obj here
+
+        // when done using object, will not destroy the object provided but stop writing changes to filename
+
+        o2file.destroy("myfile");
     });
 ```
