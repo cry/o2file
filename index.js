@@ -94,7 +94,16 @@ let setupProxy = (filename, obj, opts) => {
 
 }
 
+let destroy = (filename) => {
+    if (typeof handles[filename] === "undefined") return;
+
+    clearInterval(handles[filename].handle);
+
+    delete handles[filename];
+}
+
 module.exports = {
     version: 0.1,
-    init: init
+    init: init,
+    destroy: destroy
 }

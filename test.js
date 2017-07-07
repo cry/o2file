@@ -6,6 +6,7 @@ let opts = {
 
 o2file.init("myobj.json", opts).then((obj) => {
     obj.lol = "lol";
-
     obj.memes = "new memes"
+
+    o2file.destroy("myobj.json");
 });
