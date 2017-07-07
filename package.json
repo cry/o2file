@@ -1,0 +1,23 @@
+{
+  "name": "o2file",
+  "version": "1.0.0",
+  "description": "Creates a filebacked mirrored object",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "author": "Carey Li",
+  "license": "MIT",
+  "dependencies": {
+    "bluebird": "^3.5.0"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cry/o2file.git"
+  },
+  "bugs": {
+    "url": "https://github.com/cry/o2file/issues"
+  },
+  "homepage": "https://github.com/cry/o2file#readme"
+}
